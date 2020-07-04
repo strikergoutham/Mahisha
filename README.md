@@ -52,17 +52,15 @@ gitleaks_RulesPath = rules.toml
 ```
         
 ####Here Mode can take two values 1 or 2. 
-                             Mode = 1 #Audit only PR for the raised PR request.
-                             Mode = 2 #Audit Complete branch for which PR is raised for.
+                             ####Mode = 1 #Audit only PR for the raised PR request.
+                             ####Mode = 2 #Audit Complete branch for which PR is raised for.
 
 ####Monitor_branch takes up value of the branch that you would like to monitor. Default is master branch.
 
 >> Start the server
 ```bash
-
 python3 mahisha.py
-
-'''
+```
 >> Select the Repositories you would like to monitor and set up web hooks in the repository settings for PUSH and Pull Request Events.
 
 >> You are all set up! Check Mahisha in action for all further activities on the monitored repository.
