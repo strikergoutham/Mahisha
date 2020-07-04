@@ -59,10 +59,16 @@ gitleaks_RulesPath = rules.toml
 
 #### Monitor_branch takes up value of the branch that you would like to monitor. Default is master branch.
 
+#### Set up Environment variables for SLACK_TOKEN and GIT_TOKEN.
 >> Start the server
 ```bash
+export GIT_TOKEN="<your git token here>"
+export SLACK_TOKEN = "<your slack user token here>"
+
 python3 mahisha.py
 ```
+
+
 >> Select the Repositories you would like to monitor and set up web hooks in the repository settings for PUSH and Pull Request Events.
 
         Web service endpoint which receives activities data : **httpx://your-server/ScanBranch**
