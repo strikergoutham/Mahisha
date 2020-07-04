@@ -1,3 +1,7 @@
+'''
+Author : Goutham Madhwaraj (@barriersec.com)
+https://github.com/strikergoutham/Mahisha
+'''
 from flask import Flask, request
 from flask_restful import Resource, Api
 import calendar
