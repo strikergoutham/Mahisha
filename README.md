@@ -65,7 +65,9 @@ python3 mahisha.py
 ```
 >> Select the Repositories you would like to monitor and set up web hooks in the repository settings for PUSH and Pull Request Events.
 
-        Web service endpoint which receives activitiesdata : **httpx://your-server/ScanBranch**
+        Web service endpoint which receives activities data : **httpx://your-server/ScanBranch**
+        
+  #### Make Sure to Choose  >> **Content type** as **application/json** while setting up web hook options 
 
 >> You are all set up! Check Mahisha in action for all further activities on the monitored repository.
 
