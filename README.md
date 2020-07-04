@@ -65,6 +65,8 @@ python3 mahisha.py
 ```
 >> Select the Repositories you would like to monitor and set up web hooks in the repository settings for PUSH and Pull Request Events.
 
+        Web service endpoint which receives activitiesdata : **httpx://your-server/ScanBranch**
+
 >> You are all set up! Check Mahisha in action for all further activities on the monitored repository.
 
 Mahisha Receives the webhook data, proccess and audit the code for secrets using gitleaks and finally forwards the formatted result to the specified slack channel.
