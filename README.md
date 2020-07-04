@@ -1,6 +1,8 @@
 # Mahisha
 Mahisha is a real time monitoring tool for accidental commit of sensitive secrets on github. Its a wrapper webservice which uses gitleaks to audit for secrets in real time.
 
+![Mahisha](/screenshots/mahisha_2.PNG)
+
 ## Overview
 
 > Mahisha makes use of gitleaks to audit secrets in real time. it makes use of combination of webhook and slack integration to make blue teamer's / internal security engineer's job easy in detecting sensitive secrets at earlier stages of code commit.
@@ -66,7 +68,7 @@ python3 mahisha.py
 >> You are all set up! Check Mahisha in action for all further activities on the monitored repository.
 
 Mahisha Receives the webhook data, proccess and audit the code for secrets using gitleaks and finally forwards the formatted result to the specified slack channel.
-
+![Mahisha](/screenshots/mahisha_3.PNG)
 ##### Developed with ♥️ by: Goutham Madhwaraj
 ##### Do not use this tool for any malicious purpose. I am not responsible for any damage you cause / any non desirable consequences with the help of this tool.
 
