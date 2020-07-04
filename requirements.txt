@@ -1,0 +1,4 @@
+slack
+slack-client
+flask-restful
+flask
