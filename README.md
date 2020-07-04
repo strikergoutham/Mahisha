@@ -1,7 +1,7 @@
 # Mahisha
 Mahisha is a real time monitoring tool for accidental commit of sensitive secrets on github. Its a wrapper webservice which uses gitleaks to audit for secrets in real time.
 
-##Overview
+## Overview
 
 > Mahisha makes use of gitleaks to audit secrets in real time. it makes use of combination of webhook and slack integration to make blue teamer's / internal security engineer's job easy in detecting sensitive secrets at earlier stages of code commit.
 
@@ -17,7 +17,7 @@ Mahisha is a real time monitoring tool for accidental commit of sensitive secret
 
 Mahisha uses python's flask for hosting the web service. The webservice endpoint ( httpsx://server/ScanBranch ) is exposed and is used as webhook url for github events(push,pull request) for real time consumption of data.
 
-###Prerequisites :
+### Prerequisites :
 
 >> Requires Python 3
 
@@ -28,7 +28,7 @@ Mahisha uses python's flask for hosting the web service. The webservice endpoint
 pip3 install -r requirements.txt
 ```
 
-###Steps:
+### Steps:
 
 >> Generate **github API token** for the account which has the code repositories accessibe.
 
@@ -51,11 +51,11 @@ Mode = 1
 gitleaks_RulesPath = rules.toml
 ```
         
-####Here Mode can take two values 1 or 2. 
-                             ####Mode = 1 #Audit only PR for the raised PR request.
-                             ####Mode = 2 #Audit Complete branch for which PR is raised for.
+#### Here Mode can take two values 1 or 2. 
+                             #### Mode = 1 #Audit only PR for the raised PR request.
+                             #### Mode = 2 #Audit Complete branch for which PR is raised for.
 
-####Monitor_branch takes up value of the branch that you would like to monitor. Default is master branch.
+#### Monitor_branch takes up value of the branch that you would like to monitor. Default is master branch.
 
 >> Start the server
 ```bash
