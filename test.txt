@@ -1,0 +1,2 @@
+testttt
+sql = input(_sql)
